@@ -1,0 +1,52 @@
+// COLOR VARIABLES
+$color-red: #d12d1d;
+$color-orange: #f36d24;
+$color-yellow: #f9e346;
+$color-green: #189959;
+$color-light-blue: #3ea1ed;
+$color-dark-blue: #2241b2;
+$color-purple: #7d3075;
+
+// @mixin transition-basic {
+//   transition: all 0.3s;
+
+// }
+
+// FONT VARIABLES
+$font-primary: 'Poppins',
+'sans-serif';
+$font-secondary: 'Raleway';
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+  
+    // font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    // background-color: #090B08;
+  
+  
+  
+  }

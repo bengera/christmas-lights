@@ -17,7 +17,8 @@ body {
   overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  background-color: #090B08; }
 
 .lights-container {
   display: flex;
@@ -30,7 +31,8 @@ body {
   justify-content: center;
   align-items: center; }
 
-.on, .off {
+.on,
+.off {
   padding: 1rem 2rem;
   cursor: pointer; }
 
@@ -43,11 +45,12 @@ body {
   height: 50px;
   border: 1px solid black;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 40px;
   transition: all .4s; }
 
 .red {
-  background-color: #d12d1d; }
+  background-color: #d12d1d;
+  animation: pulse-red 1s infinite; }
 
 .orange {
   background-color: #f36d24; }
@@ -66,3 +69,12 @@ body {
 
 .purple {
   background-color: #7d3075; }
+
+@keyframes pulse-red {
+  0%,
+  100% {
+    box-shadow: 1px 0px 34px 9px rgba(209, 45, 29, 0.69);
+    -webkit-box-shadow: 1px 0px 34px 9px rgba(209, 45, 29, 0.69);
+    -moz-box-shadow: 1px 0px 34px 9px rgba(209, 45, 29, 0.69); }
+  50% {
+    box-shadow: none; } }
